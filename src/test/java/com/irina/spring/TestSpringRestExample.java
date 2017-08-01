@@ -38,7 +38,7 @@ public class TestSpringRestExample {
 	private static void testCreateCompany() {
 		RestTemplate restTemplate = new RestTemplate();
 		Company comp = new Company();
-		comp.setId(1);comp.setName("Irina Constantin");
+		comp.setId(1);comp.setName("Irina");
 		Company response = restTemplate.postForObject(SERVER_URI+CompRestURIConstants.CREATE_COMP, comp, Company.class);
 		printCompData(response);
 	}
